@@ -1,0 +1,327 @@
+@import 'footer.css';
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background-color: #dadada;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(197, 101, 101);
+    position: relative;
+}
+
+.cta {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta:hover {
+    transform: translate(-50%, -2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+    background-color: #ce9c12;
+}
+
+/* Details section */
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 1rem 0rem;
+    margin: 0 calc(var(--pd-desktop) * .5);
+    background-color: var(--clr-body-bg);
+    border-radius: 5px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    
+}
+
+.detail p {
+    font-size: var(--fs-sm);
+    margin-top: .2em;
+}
+
+/* Categories section */
+.menu-topics {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 1rem;
+}
+
+.menutopic {
+    --size: 450px;
+    max-width: var(--size);
+    max-height: var(--size);
+    min-height: 450px;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin: .5rem 0rem;
+}
+
+.menutopic-title {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 150%;
+    z-index: 5;
+    font-weight: bold;
+    color: white;
+}
+
+
+.menutopic-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.customer-club {
+    background-color: #5A858B;
+    background-image: url('../images/kundeklub-shirts.jpg');
+    background-position: center;
+    width: 100%;
+    padding: var(--pd-mobil);
+}
+
+
+.customer-club-paragraph {
+    font-size: var(--fs-sm);
+    margin-top: .6rem;
+}
+
+.newsletter-field input,
+.newsletter-field label {
+    font-size: var(--fs-sm);
+}
+
+.newsletter-field input {
+    margin-top: .2em;
+    padding: .2rem .4rem;
+}
+
+.customer-club-form {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.newsletter-field {
+    display: inline-flex;
+    align-items: stretch;
+    flex-flow: column nowrap;
+}
+
+.customer-club-form .btn {
+    padding: .4rem 2em;
+    box-shadow: none;
+}
+
+.clothing-showcase {
+    padding: 2rem var(--pd-mobil);
+}
+
+.clothing-nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clothing-nav a {
+    font-size: var(--fs-sm);
+}
+
+.clothing-nav a > img{
+    width: 1em;
+    margin-left: .5em;
+}
+
+.products {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 1rem;
+    overflow-x: auto;
+    /* -webkit-overflow-scrolling: touch; */
+    padding: 2rem 0;
+    width: auto;
+}
+
+.product {
+    margin: 0 .5rem;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product p {
+    font-size: var(--fs-sm);
+}
+
+.splide {
+    min-height: 16rem;
+}
+
+.splide__pagination .splide__pagination__page{
+    background-color: rgb(98, 98, 98);
+}
+
+.splide__pagination .is-active{
+    background-color: black;
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) { 
+
+hr { display: none; }
+.mobil-bottom-nav { display: none !important; }
+.mobil-menu-nav { display: none; }
+.mobil-search-menu { display: none; }
+
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0rem;
+    width: calc(100% - var(--pd-desktop) * 2);
+    margin: 0 var(--pd-desktop);
+    background-color: var(--clr-body-bg);
+    /* position: relative; */
+    transform: translateY(-6rem);
+    font-size: var(--fs-lg);
+    /* bottom: 6rem; */
+    /* border-radius: 5px; */
+}
+
+.detail {
+    width: auto;
+}
+
+
+.detail img {
+    width: 200px;
+    max-width: 200px;
+    margin-bottom: 2rem;
+}
+
+.menu-topics {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: -4rem;
+    /* margin: 16rem auto 16rem auto; */
+}
+
+.menutopic {
+    max-width: 25%;
+    max-height: 25%;
+    min-height: auto;
+    position: relative;
+}
+
+.menutopic-title {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: var(--fs-xx);
+    z-index: 5;
+    color: white;
+}
+
+
+.menutopic-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.customer-club {
+    /* background-image: url('../images/kundeklub-shirts.jpg');
+    background-position: center;
+    width: 100%; */
+    padding: var(--pd-desktop);
+}
+
+.customer-club-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.customer-club-paragraph {
+    max-width: 50ch;
+    color: rgb(37, 37, 37);
+    margin: 1.5rem 0 2rem 0;
+}
+
+.customer-club-title {
+    font-size: var(--fs-xx);
+}
+
+
+
+.newsletter-field input {
+    font-size: var(--fs-lg);
+}
+
+.clothing-nav {
+    padding: 2rem var(--pd-desktop) 0 var(--pd-desktop);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clothing-nav-link,
+.product-link,
+.footer-list-link {
+    text-decoration: none;
+    color: black;
+}
+
+.clothing-nav-link:hover,
+.footer-list-link:hover {
+    text-decoration: underline;
+}
+
+.clothing-nav-link img {
+    width: 30px;
+    margin-left: 1rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem var(--pd-desktop);
+}
+
+.product {
+    /* max-width: 300px; */
+    width: 100%;
+}
+.product img {
+    width: 100%;
+}
+
+}

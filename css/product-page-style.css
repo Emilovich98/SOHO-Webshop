@@ -1,0 +1,192 @@
+/* Filter window styling */
+
+.mobile-filter-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.mobile-filter-bg-fill {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.294);
+}
+
+.mobile-filter-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.178);
+}
+
+.mobile-filter-top-elements-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.mobile-filter-heading {
+    font-family: var(--ff-body);
+    font-size: 24px;
+}
+
+.mobile-filter-close-btn {
+    border-style: none;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+}
+
+.mobile-filter-close-icon {}
+
+/* Styling af navigation path */
+
+.navigation-path-container {
+    height: 50px;
+    background-color: blue;
+}
+
+/* Styling af produkt side */
+
+.product-page-container {
+    display: flex;
+    width: 100vw;
+}
+
+/* sidemenu-styling */
+
+.side-menu {
+    width: 350px;
+    background-color: brown;
+    min-height: 100vh;
+    display: none;
+}
+
+/* Produkt-vindue-styling */
+
+.product-window {
+    width: 100vw;
+}
+
+/* Styling af filter-container */
+
+.filters-container {
+    width: 100vw;
+    display: flex;
+    padding: 0px 17px;
+    margin-top: 20px;
+}
+
+.filters-devider {
+    width: 50vw;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.filter-buttons {
+    font-size: 16px;
+    width: 100%;
+    height: 48px;
+    border-style: none;
+    font-family: var(--ff-body);
+}
+
+#filter-button {
+    display: flex;
+    align-items: center;
+    background-color: #1D1D1D;
+    color: white;
+}
+
+.filter-icon {
+    width: 26px;
+    display: block;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#sort-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    border-style: solid;
+    border-color: #1D1D1D;
+}
+
+.sort-arrow {
+    width: 20px;
+    margin-right: 16px;
+}
+
+/* Styling af individuel produktkort */
+
+.product-spawn {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 6px;
+    grid-row-gap: 16px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 100%;
+    position: relative;
+    background-color: #F3EFE9;
+}
+
+.like-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: 6px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.400);
+}
+
+.like-icon {
+    width: 60%;
+    padding-top: 2px;
+}
+
+.product-image {
+    aspect-ratio: 3/4;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.product-information {}
+
+.product-text-container {}
+
+.product-title {
+    font-size: 16px;
+}
+
+.product-brand {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.product-price-container {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.product-price {}
